@@ -45,7 +45,7 @@ class AccessLogParser:
                 url=url,
                 status_code=status_code,
                 country="Unknown",  # Will be set later
-                date=timestamp.strftime("%Y-%m-%d"),
+                date=date_str,  # Keep original format
                 hour=timestamp.hour
             )
         
@@ -64,7 +64,7 @@ class AccessLogParser:
                 url="/",
                 status_code="000",
                 country="Unknown",  # Will be set later
-                date=timestamp.strftime("%Y-%m-%d"),
+                date=date_str,  # Keep original format
                 hour=timestamp.hour
             )
         
